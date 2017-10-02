@@ -2,8 +2,8 @@
 
 from abc import ABC, abstractmethod
 
-"""CS510 - CW05 Abstract Base Classes.
 
+"""CS510 - CW05 Abstract Base Classes.
 This module provides abstract base classes for CW05.
 Note that such a class does nothing by itself: all functionality
 is just a pass statement as written. Instead, a coder is
@@ -11,7 +11,6 @@ intended to inherit from this class in order to adopt its
 interface. The set of attributes and methods of a class
 that subclasses the abstract base class should provide
 implementations as appropriate.
-
 The point of such a structure is to guide other programmers
 into good design, so that they can use an interface that
 you expect to exist. This is part of the communal nature of

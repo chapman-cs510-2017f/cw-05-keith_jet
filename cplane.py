@@ -97,7 +97,7 @@ class ListComplexPlane(AbsComplexPlane):
         the attribute fs to an empty list so that no functions 
         are transforming the fresh plane.
         """
-        self.plane = self.__initplane_()
+        self.__initplane__()
         self.fs = []
    
     def apply(self, fun):
@@ -119,16 +119,20 @@ class ListComplexPlane(AbsComplexPlane):
         final output of the sequence of transformations collected in
         the list self.fs.
         """
+        #init the plane
         self.xmin = xmin
         self.xmax = xmax
         self.xlen = xlen
         self.ymin = ymin
         self.ymax = ymax
         self.ylen = ylen
-        self.fs =[]
         self.__initplane__()
-        for fun in fs:
-            self.plane = fun(self.plane)
+        
+        if len(self.fs) > 0:
+            for fun in self.fs:
+                self.plane = fun(self.plane)
+        else:
+            print("no fun applied")
 
 def doubleplane(plane):
      for i in range(len(plane)):
