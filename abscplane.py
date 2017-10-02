@@ -2,7 +2,6 @@
 
 from abc import ABC, abstractmethod
 
-
 """CS510 - CW05 Abstract Base Classes.
 
 This module provides abstract base classes for CW05.

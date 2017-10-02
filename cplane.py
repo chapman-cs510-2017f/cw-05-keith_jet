@@ -7,6 +7,7 @@
 
 from abscplane import AbsComplexPlane
 
+
 class ListComplexPlane(AbsComplexPlane):
     """
     
@@ -105,6 +106,7 @@ class ListComplexPlane(AbsComplexPlane):
         value of self.plane is the final output of the sequence of
         transformations collected in the list self.fs.
         """
+        
         self.plane = fun(self.plane)
         self.fs.append(fun)
     
