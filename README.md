@@ -2,7 +2,7 @@
 
 **Author(s):Jianhua, Keith**
 
-[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-05-cw-05-keith_jet.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-05-cw-05-keith_jet)
+[![Build Status](https://travis-ci.org/chapman-cs510-2017f/cw-05-keith_jet.svg?branch=master)](https://travis-ci.org/chapman-cs510-2017f/cw-05-keith_jet)
 
 ## Specification
 
@@ -34,7 +34,8 @@ I pledge that all the work in this repository is my own with only the following 
 
 * Content of starter files supplied by the instructor;
 * Code borrowed from another source, documented with correct attribution in the code and summarized here.
-Refered to other group member' idea in class and after class. 
+
+Refered to other group member' (Sharon) idea about the usage of list in list. 
 
 Signed,
 
