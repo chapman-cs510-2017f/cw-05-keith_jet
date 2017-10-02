@@ -141,10 +141,10 @@ def doubleplane(plane):
     mulitple the grids
     '''
     
-     for i in range(len(plane)):
+    for i in range(len(plane)):
         for j in range(len(plane[i])):
             plane[i][j] *=2
-     return plane
+    return plane
 
 def powerplane(plane):
     '''
