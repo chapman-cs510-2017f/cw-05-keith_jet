@@ -24,7 +24,6 @@ def test_apply():
     CP = LCP(1,4,3,2,5,3)
     CP.apply(doubleplane)
     assert CP.plane == [[(2+4j), (5+4j), (8+4j)], [(2+7j), (5+7j), (8+7j)], [(2+10j), (5+10j), (8+10j)]]
-    CP.apply(plane)
     
 def test_zoom():
     CP = LCP(1,4,3,2,5,3)
