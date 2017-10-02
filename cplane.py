@@ -154,7 +154,7 @@ def powerplane(plane):
     for i in range(len(plane)):
         for j in range(len(plane[i])):
             plane[i][j] =plane[i][j] * plane[i][j] 
-     return plane
+    return plane
 
 LCP = ListComplexPlane(1,4,3,2,5,3)
 print("init plane")
