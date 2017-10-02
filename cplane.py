@@ -79,6 +79,8 @@ class ListComplexPlane(AbsComplexPlane):
         self.plane = []
         xunit = (self.xmax - self.xmin)/(self.xlen - 1)
         yunit = (self.ymax - self.ymin)/(self.ylen - 1)
+        
+        ##add the 2D grid in a list in list
         self.plane = [[(self.xmin + i*xunit)+(self.ymin + j*yunit)*1j for i in range(self.xlen)]for j in range(self.ylen)]
         
         '''
@@ -135,13 +137,21 @@ class ListComplexPlane(AbsComplexPlane):
             print("no fun applied")
 
 def doubleplane(plane):
+    '''
+    mulitple the grids
+    '''
+    
      for i in range(len(plane)):
         for j in range(len(plane[i])):
             plane[i][j] *=2
      return plane
 
 def powerplane(plane):
-     for i in range(len(plane)):
+    '''
+    mulitple the grids by iteself
+    '''
+
+    for i in range(len(plane)):
         for j in range(len(plane[i])):
             plane[i][j] =plane[i][j] * plane[i][j] 
      return plane
